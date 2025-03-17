@@ -17,8 +17,14 @@
 
 body {
     min-height: 100vh;
-    background: var(--bg-color);
+    background-image: url(../images/redback.jpg);
     color: var(--text-color);
+background-size: cover ;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
 }
 
 /* Header */
@@ -34,11 +40,12 @@ header {
     background: linear-gradient(to right, #3a0404, #550f0f);
     padding: 28px 12%;
     transition: all .50s ease;
-    border-bottom-right-radius: 120px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.header-logo{
+.header-logo {
     width: 90px;
 
 }
@@ -66,6 +73,7 @@ header {
 
 .navbar a.active {
     color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
 }
 
 #menu-icon {
@@ -121,14 +129,15 @@ header {
 /* Footer */
 footer {
     width: 100%;
-    position: absolute;
+    position: relative  ;
     bottom: 0;
     background: linear-gradient(to right, #550f0f, #3a0404);
     color: var(--text-color);
     padding: 100px 0 30px;
-    border-top-left-radius: 125px;
-    font-size: 13px;
-    line-height: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 14px;
+    line-height: 1.6;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -179,7 +188,7 @@ footer .logo {
     color: var(--text-color);
 }
 
-.col .fas{
+.col .fas {
     margin-right: 10px;
 }
 
@@ -285,3 +294,129 @@ footer .underline span {
         flex-basis: 100%;
     }
 }
+
+
+/* Hero */
+.fullContainer {
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: url(../images/redback.jpg); */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--text-color);
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.banner h1 span {
+    background-color: var(--main-color);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p {
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.banner a {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: 0;
+    outline: none;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 10px;
+    transition: all .50s ease;
+    font-weight: 600;
+
+}
+
+.banner a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width:1140px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+}
+
+@media screen and (max-width:1080px) {
+    .banner h1 {
+        margin-top: 200px;
+    }
+}
+
+
+@media screen and (max-width:1020px) {
+    .banner {
+        background-position: 45%;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner {
+        background-position-x: 65%;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .banner p,
+    .banner h {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .banner h1 {
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .banner a {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+ 
