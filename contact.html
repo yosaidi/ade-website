@@ -1,6 +1,151 @@
-<form action="php/contact.php" method="POST">
-    <input type="text" name="name" placeholder="Votre nom" required>
-    <input type="email" name="email" placeholder="Votre email" required>
-    <textarea name="message" placeholder="Votre message" required></textarea>
-    <button type="submit">Envoyer</button>
-</form>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADE ZIRI OUJDA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-----Header---->
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo.jpg" class="header-logo"></a>
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html" class="active">Qui Sommes Nous?</a></li>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-----Header END---->
+
+    <!-----Contact Form----->
+    <section class="contact">
+        <div class="content">
+            <h2>Réclamations</h2>
+            <p>
+                N'hésitez pas à nous faire part de vos préoccupations, nous ferons de notre mieux pour y répondre
+                rapidement.
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><b></b><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Adresse</h3>
+                        <p>Complexe universitaire,<br>Oujda,<br>60000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><b></b><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Téléphone</h3>
+                        <p>+212-766172706</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><b></b><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>adezirioujda@gmail.com</p>
+                    </div>
+                </div>
+
+                <h2 class="txt">Connectez avec nous</h2>
+                <ul class="sci">
+                    <li> <a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2>Envoyer un message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" name="" required="required">
+                        <span>Nom et Prénom</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Entrez votre message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-----Contact Form END----->
+
+    <!-----Footer----->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="images/logo.jpg" class="logo">
+                <p>
+                    L'Association ZIRI des Étudiants de l'ENCG Oujda,
+                    créée par et pour les étudiants, elle veille à leur représentation,
+                    défend leurs intérêts et enrichit la vie estudiantine à travers diverses activités.
+                </p>
+            </div>
+            <div class="col">
+                <h3>Localisation <div class="underline"><span></span></div>
+                </h3>
+                <p>Complexe universitaire</p>
+                <p>Oujda</p>
+                <p>60000</p>
+                <p class="email-id">adezirioujda@gmail.com</p>
+                <h4><i class="fas fa-phone"></i>+212-766172706</h4>
+            </div>
+            <div class="col">
+                <h3>Liens<div class="underline"><span></span></h3>
+                <ul class="">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Qui Sommes Nous?</a></li>
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter<div class="underline"><span></span></h3>
+                <form action="">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Entrez votre email" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i> </button>
+                </form>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2025 ADE-ENCGO. Tous droits réservés.</p>
+    </footer>
+    <!-----Footer END----->
+
+    <!-----JS----->
+    <script src="js/script.js"></script>
+    <!-----END----->
+
+</body>
+
+</html>
