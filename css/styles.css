@@ -368,7 +368,6 @@ footer .underline span {
     color: var(--main-color);
 }
 
-
 /*Carousel*/
 .carousel {
     width: 100vw;
@@ -506,6 +505,36 @@ footer .underline span {
     }
 }
 
+
+@media (max-width:725px) {
+    .hero-content {
+        height: 80vh;
+    }
+
+
+    .carousel .list .item:nth-child(1),
+    .carousel .list .item:nth-child(2) {
+
+        height: 30%;
+    }
+
+    .arrows{
+        top: 25%;
+    }
+}
+
+@media (max-width:1200px) {
+    .carousel {
+        height: 150vh;
+    }
+
+    .carousel .list .item:nth-child(4),
+    .carousel .list .item:nth-child(3) {
+
+        height: 30%;
+    }
+}
+
 /* Carousel */
 
 
@@ -632,14 +661,15 @@ footer .underline span {
 .contact .content {
     padding-top: 50px;
     width: 2000px;
-    height: 180px;    text-align: center;
+    height: 180px;
+    text-align: center;
     background: rgba(0, 0, 0, 0.5);
 
 }
 
 .contact .content h2 {
     font-size: 3em;
-    color: var(--text-color);
+    color: var(--main-color);
     font-weight: 500;
 
 }
@@ -852,4 +882,42 @@ footer .underline span {
     padding: 10px;
     font-size: 1.1em;
     font-weight: 500;
+}
+
+@media (max-width:991px) {
+    .contact .container {
+        flex-direction: column;
+
+    }
+
+    .contact .content {
+        padding-top: 80px;
+        height: 25vh;
+    }
+
+    .contact .content p {
+        font-size: 20px;
+        /* Reduce font size */
+        line-height: 1.6;
+        text-align: justify;
+        /* Optional: Adjust alignment */
+        max-width: 29%;
+        /* Prevents text from stretching too wide */
+        margin: 0 auto;
+        /* Centers the paragraph */
+    }
+
+    .contact .container .contactInfo,
+    .contact .container .contactForm {
+        width: 100%;
+    }
+
+    .contact .container .contactForm {
+        padding: 40px;
+    }
+
+    .contact .container .contactForm form {
+        padding: 10px;
+    }
+
 }
