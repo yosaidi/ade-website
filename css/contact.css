@@ -1,0 +1,275 @@
+@import url('global.css');
+/*Contact*/
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    padding-top: 50px;
+    width: 2000px;
+    height: 180px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.contact .content h2 {
+    font-size: 3em;
+    color: var(--main-color);
+    font-weight: 500;
+
+}
+
+.contact .content p {
+    color: var(--text-color);
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.contact .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contact .container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.contact .container .contactInfo .box .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 27.5deg, var(--main-color) 0%, var(--main-color)10%, transparent 10%, transparent 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .container .contactInfo .box .icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117.5deg, var(--main-color) 0%, var(--main-color)10%, transparent 10%, transparent 50%);
+}
+
+.contact .container .contactInfo .box .icon::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: var(--bg-color);
+}
+
+.contact .container .contactInfo .box .icon b {
+    position: absolute;
+    inset: 8px;
+    z-index: 2;
+    background: var(--main-color);
+}
+
+.contact .container .contactInfo .box .icon i {
+    position: relative;
+    z-index: 1000;
+    font-size: 1.25em;
+    color: var(--bg-color);
+}
+
+.contact .container .contactInfo .box .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.contact .container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.contact .container .contactInfo .txt {
+    color: var(--text-color);
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid var(--main-color);
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.contact .container .contactInfo .sci {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.contact .container .contactInfo .sci li {
+    list-style: none;
+}
+
+
+.contact .container .contactInfo .sci li a {
+    color: var(--text-color);
+    font-size: 1.5em;
+    transition: 0.25;
+}
+
+.contact .container .contactInfo .sci li a:hover {
+    color: var(--main-color);
+    filter: drop-shadow(0 0 5px --main-color);
+}
+
+
+.contact .contactForm {
+    position: relative;
+    width: 40%;
+    background: repeating-conic-gradient(from var(--a), var(--main-color) 0%, var(--main-color)10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 60px;
+}
+
+.container .contactForm::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a), var(--main-color) 0%, var(--main-color)10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.container .contactForm::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 20px solid var(--bg-color);
+    background: var(--main-color);
+}
+
+@keyframes animate {
+    0% {
+        --a: 0deg;
+
+    }
+
+    100% {
+        --a: 360deg;
+    }
+}
+
+.container .contactForm form {
+    position: relative;
+    z-index: 10;
+}
+
+.container .contactForm form h2 {
+    font-size: 2em;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.container .contactForm form .inputBox {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+}
+
+.container .contactForm form .inputBox input,
+.container .contactForm form .inputBox textarea {
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+}
+
+.container .contactForm form .inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    transition: 0.5;
+}
+
+.container .contactForm form .inputBox input:focus~span,
+.container .contactForm form .inputBox textarea:focus~span,
+.container .contactForm form .inputBox input:valid~span,
+.container .contactForm form .inputBox textarea:valid~span {
+    color: var(--bg-color);
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+
+.container .contactForm form .inputBox input[type="submit"] {
+    width: 100%;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+@media (max-width:991px) {
+    .contact .container {
+        flex-direction: column;
+
+    }
+
+    .contact .content {
+        padding-top: 80px;
+        height: 25vh;
+    }
+
+    .contact .content p {
+        font-size: 20px;
+        /* Reduce font size */
+        line-height: 1.6;
+        text-align: justify;
+        /* Optional: Adjust alignment */
+        max-width: 29%;
+        /* Prevents text from stretching too wide */
+        margin: 0 auto;
+        /* Centers the paragraph */
+    }
+
+    .contact .container .contactInfo,
+    .contact .container .contactForm {
+        width: 100%;
+    }
+
+    .contact .container .contactForm {
+        padding: 40px;
+    }
+
+    .contact .container .contactForm form {
+        padding: 10px;
+    }
+
+}
