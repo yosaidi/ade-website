@@ -1,65 +1,62 @@
 @import url('global.css');
+
 /* Hero Section */
+
+
 .hero {
-    align-items: center;
+    display: flex;
     justify-content: center;
-    text-align: center;
-    color: var(--text-color);
-    padding-top: 80px;
-    /* Match header height */
-    margin-top: 0;
-    /* Ensure no extra margin */
-    position: relative;
-    /* Ensure content stays within the section */
-    overflow: hidden;
-    /* Prevent content from overflowing */
+    align-items: center;
+    /* height: 80vh;  */
+    background: rgba(0, 0, 0, 0.5) url('../images/bg.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Adjust width */
+    width: 90%;
+    margin: 0 auto;
+    gap: 95px;
 }
 
 .hero-content {
-    width: 100%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
-    z-index: 1;
-    /* Ensure content is above the background */
-    padding-top: 80px;
-    height: 350px;
-    border-bottom: 5px solid var(--main-color);
-
+    flex: 1;
+    color: white;
+    padding-right: 20px;
 }
 
-.hero span {
-    color: var(--main-color);
+.hero-content h1 {
+    font-size: 2.5rem;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
+.hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
 }
 
 .hero-btn {
-    background: var(--main-color);
-    color: var(--text-color);
+    display: inline-block;
+    background: #8f1814;
+    color: white;
     padding: 10px 20px;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    margin-top: 10px;
 }
 
-.hero-btn:hover {
-    background: #fff;
-    color: var(--main-color);
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width:725px) {
-    .hero-content {
-        height: 80vh;
-    }
-
+.hero-image img {
+    width: 200%;
+    max-width: 700px; /* Adjust image size */
 }
+
+

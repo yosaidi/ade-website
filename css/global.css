@@ -15,8 +15,10 @@
     --main-color: rgb(226, 51, 39);
 }
 
-
 /* Global Reset */
+html {
+    scroll-snap-type: y mandatory;
+}
 html,
 body {
     overflow-x: hidden;
@@ -25,9 +27,12 @@ body {
 
 body {
     min-height: 100vh;
-    background-image: url(../images/bg.png);
-    color: var(--text-color);
+    background: rgba(0, 0, 0, 0.5) url('../images/bg.png');
+    background-blend-mode: multiply;
     background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    /* scroll-snap-align: start; */
 }
 
 p {

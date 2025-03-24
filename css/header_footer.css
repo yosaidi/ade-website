@@ -49,54 +49,14 @@ header {
     border-bottom: 2px solid var(--main-color);
 }
 
-#menu-icon {
-    font-size: 35px;
-    color: var(--text-color);
-    cursor: pointer;
-    z-index: 20000;
-    display: none;
-}
-
-@media (max-width: 1200px) {
-    #menu-icon {
-        display: block;
-        color: var(--text-color);
+    #menu-icon i {
+        font-size: 24px;
+        color: white;
     }
+    
 
-    .navbar {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 270px;
-        height: 29vh;
-        background: var(--main-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 10px;
-        transition: all .50s ease;
-    }
 
-    .navbar a {
-        display: block;
-        margin: 12px 0;
-        padding: 0px 25px;
-        transition: all .50s ease;
-    }
 
-    .navbar a:hover {
-        color: var(--text-color);
-        transform: translateY(-3px);
-    }
-
-    .navbar a.active {
-        color: var(--text-color);
-    }
-
-    .navbar.open {
-        right: 2%;
-    }
-}
 
 
 /* Footer */
@@ -252,35 +212,3 @@ footer .underline span {
     }
 }
 
-@media (max-width:700px) {
-    footer {
-        bottom: unset;
-    }
-
-    .col {
-        flex-basis: 100%;
-    }
-
-    .col:nth-child(2),
-    .col:nth-child(3) {
-        flex-basis: 100%;
-    }
-}
-
-/* Responsive Design */
-
-@media screen and (max-width: 999px) {
-
-    header {
-        padding-left: 50px;
-    }
-
-}
-
-@media screen and (max-width: 690px) {
-    header nav a {
-        font-size: 14px;
-        margin-right: 0;
-    }
-
-}

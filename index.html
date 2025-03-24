@@ -4,17 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
     <title>ADE ZIRI OUJDA</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -30,15 +36,23 @@
         </ul>
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
+    <!-----Header END---->
+
     <!-----Hero Section---->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Bienvenue à l'<span>ADE ZIRI Oujda</span></h1>
-            <p>L'Association ZIRI des Étudiants de l'ENCG Oujda, créée par et pour les étudiants, elle veille à leur
-                représentation, défend leurs intérêts et enrichit la vie estudiantine à travers diverses activités.</p>
-            <a href="about.html" class="hero-btn">Découvrez Plus</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Bienvenue à l'<span>ADE ZIRI Oujda</span></h1>
+                <p>L'Association ZIRI des Étudiants de l'ENCG Oujda, créée par et pour les étudiants, elle veille à leur
+                    représentation, défend leurs intérêts et enrichit la vie estudiantine à travers diverses activités.</p>
+                <a href="about.html" class="hero-btn">Découvrez Plus</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/slogan.png" alt="ADE ZIRI Oujda">
+            </div>
         </div>
     </section>
+    
     <!-----Hero Section END---->
 
     <!-- slider -->
@@ -46,7 +60,7 @@
         <!-- list Items -->
         <div class="list">
             <div class="item active">
-                <img src="images/img1.png">
+                <img src="images/soiree.jpg">
                 <div class="content">
                     <h2>Slider 01</h2>
                     <p>
@@ -98,7 +112,7 @@
         </div>
         <!-- button arrows -->
         <div class="arrows">
-            <button id="prev"><</button>
+            <button id="prev">&lt;</button>
                     <button id="next">></button>
         </div>
         <!-- thumbnail -->
@@ -136,6 +150,161 @@
         </div>
     </div>
     <!-- slider END -->
+
+    <!-- Team -->
+    <div class="team">
+
+        <div class="row">
+            <!--Chahrazade-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/chahrazade.jpg" />
+                    </div>
+                    <h3>Chahrazade El Ahmad</h3>
+                    <p>Présidente</p>
+                    <div class="icons">
+
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Saher-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/saher.jpg" />
+                    </div>
+                    <h3>Mohamed Saher</h3>
+                    <p>Vice Président</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Douaa-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/douaa.jpg" />
+                    </div>
+                    <h3>Douaa Benhammou</h3>
+                    <p>Secrétaire Générale</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Yousra-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/yousra.jpg" />
+                    </div>
+                    <h3>Yousra EL Ouazzani</h3>
+                    <p>Coordinatrice</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Youssef-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/youssef.jpg" />
+                    </div>
+                    <h3>Youssef Ramdani</h3>
+                    <p>Trésorier</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Imane-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/imane.jpg" />
+                    </div>
+                    <h3>Imane Eloudouki</h3>
+                    <p>Conseillère</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Rayane-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/rayane.jpg" />
+                    </div>
+                    <h3>Rayane Belhaj</h3>
+                    <p>Conseiller</p>
+                    <div class="icons">
+
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Ali-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="images/ali.jpg" />
+                    </div>
+                    <h3>Ali Oumouidi</h3>
+                    <p>Responsable Média</p>
+                    <div class="icons">
+
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team END-->
 
     <!-----Footer----->
     <footer>
@@ -189,8 +358,8 @@
     <!-----JS----->
     <script src="js/menu.js"></script>
     <script src="js/carousel.js"></script>
+    
     <!-----END----->
-
 </body>
 
 </html>

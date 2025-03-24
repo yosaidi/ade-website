@@ -1,0 +1,81 @@
+@import url('global.css');
+.team{
+    margin-top: 100px;
+}
+.team .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.team .column {
+    width: 100%;
+    /* padding: 0.5em 0; */
+}
+
+.team h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: #1f003b;
+}
+
+.team .card {
+    box-shadow: 0 0 2.4em var(--main-color);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--bg-color);
+    margin-bottom: 20px;
+}
+
+.team .card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: var(--main-color);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.team .card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team .card h3 {
+    font-weight: 500;
+}
+
+.team .card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.team .icons {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+
+.team .card:hover {
+    background: linear-gradient(#b63838fd, var(--bg-color));
+    color: var(--text-color);
+}
+
+.team .card:hover .img-container {
+    transform: scale(1.15);
+}
+
